@@ -1,0 +1,46 @@
+html {
+  font-family: sans-serif;
+  user-select: none;
+  overscroll-behavior-y: contain;
+}
+
+#refresh {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: grey;
+  border-radius: 50%;
+  left: 50%;
+  transition: transform 100ms ease-out;
+  /* transition: top 150ms ease-out; */
+  transform-origin: center;
+  transform: translate(0px, -8px);
+}
+#refresh.isDragging {
+  transform: scale(1.8, 1.8);
+  opacity: 60%;
+  z-index: 7;
+}
+
+#point {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background: #444;
+  border-radius: 50%;
+  left: 50%;
+  top: 105px;
+}
+#point span {
+  color: white;
+  font-size: 1.6rem;
+  position: relative;
+  top: -7px;
+  left: 3px;
+}
+
+#data {
+  position: absolute;
+  top: 150px;
+  align: middle;
+}
